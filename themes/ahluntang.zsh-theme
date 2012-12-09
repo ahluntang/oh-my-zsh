@@ -1,4 +1,4 @@
-#Frosted: ZSH Theme based on 'gnzh'
+#ahluntang: ZSH Theme based on 'frosted' and 'gnzh'
 
 
 # load some modules
