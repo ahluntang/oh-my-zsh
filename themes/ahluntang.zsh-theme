@@ -16,7 +16,7 @@ eval PR_BOLD="%{$terminfo[bold]%}"
 # Check the UID
 if [[ $UID -eq 0 ]]; then # root
   eval PR_USER='%{$PR_RED$PR_BOLD%}%n%{$PR_NO_COLOR%}'
-  local PR_PROMPT='%{$PR_RED$PR_BOLD%}➤%{$PR_NO_COLOR%} '
+  local PR_PROMPT='%{$PR_RED$PR_BOLD%}◇%{$PR_NO_COLOR%} '
 else # normal user
   eval PR_USER='%{$PR_RED$PR_BOLD%}%n%{$PR_NO_COLOR%}'
   #local PR_PROMPT='%{$PR_NO_COLOR%}➤ '
