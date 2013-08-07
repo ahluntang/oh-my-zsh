@@ -1,0 +1,33 @@
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/.oh-my-zsh
+
+ZSH_THEME="ahluntang"
+
+# Comment this out to disable bi-weekly auto-update checks
+DISABLE_AUTO_UPDATE="true"
+
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+COMPLETION_WAITING_DOTS="true"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+plugins=(screen git git-extras knife pip sublime vagrant nyan brew cloudapp osx fabric )
+
+# include aliases
+source $ZSH/custom/aliases
+
+# include path
+source $ZSH/custom/path_osx
+
+source $ZSH/oh-my-zsh.sh
+
+source $HOME/.bash_profile
+
+SSHAGENT=/usr/bin/ssh-agent
+SSHAGENTARGS="-s"
+
+if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
+    eval `$SSHAGENT $SSHAGENTARGS`
+    trap "kill $SSH_AGENT_PID" 0
+fi
+
+

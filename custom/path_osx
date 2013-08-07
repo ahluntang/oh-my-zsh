@@ -1,0 +1,4 @@
+# path info
+#
+
+export PATH=~/bin:$PATH
