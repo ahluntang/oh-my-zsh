@@ -1,4 +1,4 @@
 # path info
 #
 
-export PATH=~/bin:$PATH
+export PATH=~/bin:~/pear/bin:~/gradle/bin:$PATH

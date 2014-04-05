@@ -10,7 +10,7 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(screen git git-extras knife pip sublime vagrant nyan brew cloudapp osx fabric )
+plugins=(screen git git-extras git-prompt git-remote-branch gradle laravel bower docker tux virtualenv knife pip sublime vagrant nyan brew cloudapp osx fabric )
 
 # include aliases
 source $ZSH/custom/aliases
@@ -31,3 +31,10 @@ if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
 fi
 
 
+export PATH=$PATH:/Applications/Android\ Developer\ Tools/sdk/tools:/Applications/Android\ Developer\ Tools/sdk/platform-tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+
+# added by travis gem
+[ -f /Users/ahluntang/.travis/travis.sh ] && source /Users/ahluntang/.travis/travis.sh
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

@@ -1,5 +1,5 @@
 # aliases
-alias composer="php /bin/composer.phar"
+alias composer="php ~/bin/composer.phar"
 #alias gitroot="cd `git rev-parse --show-toplevel`"
 #alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 #alias vi="/Applications/MacVim.app/Contents/MacOS/Vim"
