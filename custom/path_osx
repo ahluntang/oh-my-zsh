@@ -1,4 +1,13 @@
-# path info
-#
+# PATH info
 
-export PATH=~/bin:~/pear/bin:~/gradle/bin:$PATH
+# default
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+
+# Android SDK
+export PATH=~/gradle/bin:/Applications/Android\ Developer\ Tools/sdk/tools:/Applications/Android\ Developer\ Tools/sdk/platform-tools:$PATH
+
+# PHP pear
+export PATH=~/pear/bin:$PATH
+
+# Local bin
+export PATH=~/bin:$PATH

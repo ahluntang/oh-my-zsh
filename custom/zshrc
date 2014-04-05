@@ -30,11 +30,3 @@ if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
     trap "kill $SSH_AGENT_PID" 0
 fi
 
-
-export PATH=$PATH:/Applications/Android\ Developer\ Tools/sdk/tools:/Applications/Android\ Developer\ Tools/sdk/platform-tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-
-# added by travis gem
-[ -f /Users/ahluntang/.travis/travis.sh ] && source /Users/ahluntang/.travis/travis.sh
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
