@@ -10,7 +10,7 @@ DISABLE_AUTO_UPDATE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(screen git git-extras git-prompt git-remote-branch gradle laravel bower docker tux virtualenv knife pip sublime vagrant nyan brew cloudapp osx fabric )
+plugins=(git git-extras git-prompt git-remote-branch gradle laravel4 bower docker tux virtualenv pip sublime vagrant brew osx )
 
 # include aliases
 source $ZSH/custom/aliases
@@ -30,3 +30,4 @@ if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
     trap "kill $SSH_AGENT_PID" 0
 fi
 
+export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
