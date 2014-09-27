@@ -1,0 +1,36 @@
+startup_message off
+activity "%c activity -> %n%f %t"
+#caption always "%{= Wk}%-w%{= Bw}%n %t%{-}%+w %-="
+caption always "%0=%{+b rk}%H %{g}| %0L=%{g}%>%-Lw%{= yr}%n%f* %t%{-}%+Lw%L>%?(%u)%? %{g}|%>%=%{g} %=%C%A %Y.%m.%d %{bk}%100="
+hardstatus on
+hardstatus alwayslastline "%0=%{r}| %{r}Ah-Lun Tang %{r}| |%=%{r}Load: %l%100="
+vbell off
+term screen-256color
+defutf8 on
+
+altscreen on
+# for shift UP and DOWN arrows
+#bindkey ^[[1;5A focus top
+#bindkey ^[[1;5B focus bottom
+
+# for shift right and left arrows
+bindkey ^[[1;2D focus left
+bindkey ^[[1;2C focus right
+
+# for ctrl right and left arrows
+bindkey ^[[1;5D focus top
+bindkey ^[[1;5C focus bottom
+
+
+screen -t main 1 zsh
+split -v
+focus right
+screen -t alt 2 zsh
+select alt
+split
+focus down
+screen -t top 3 htop
+select top
+focus up
+focus left
+select main
